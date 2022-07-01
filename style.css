@@ -3,46 +3,99 @@
 body{
   background: hsl(216, 12%, 8%);
   font-family: 'Overpass', sans-serif;
-  font-size: 'Overpass', 15px
-
+  font-size: 'Overpass', 15px;
+  margin-left: 0;
 }
+
 .container{
     display: flex;
-    width: 90vw;
-    height: 90vw;
-    margin: 0 auto;
-    max-width: 1170px;
-    max-height: 750px;
+    width: 100vw;
+    height: 100vh;
+    
     align-items: center;
     justify-content: center;  
+   
     
 
     
 } 
+
+@media screen and (min-width: 375px){
 .card{
     
-  background-color: hsl(213, 19%, 18%);  
-  padding: 2em;
-  width: 18em;
+  /* background-color: hsl(213, 19%, 18%);   */
+  background: radial-gradient(98.96% 98.96% at 50% 0, #232a34 0, #181e27 100%);
+  padding: 3em 2em;
+  width: 24em;
   border-radius: 8%;
   
     
 }
 
-.photo-container{
+}
+@media screen and (max-width: 375px) {
+  .card {
+
+    background-color: hsl(213, 19%, 18%);
+    padding: 2em;
+    width: 18em;
+    border-radius: 4%;
+
+
+  }
+
+}
+.star-photo-container{
   background-color: hsl(218, 9%, 23%);
   padding: 0.7em;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 1.4em;
-  height: 1.4em;
+  width: 2em;
+  height: 2em;
   margin-bottom: 0em;
   
 }
+.thank-photo-container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0em;
+  display: flex;
+  justify-content: center;
+}
 
-.header{
+.evaluation-info-btn{
+  
+  background-color: hsl(218, 9%, 23%);
+  color: hsl(25, 97%, 53%);
+  border: none;
+  font-family: 'Overpass', sans-serif;
+  font-size: 16px;
+  padding:7px 17px;
+  border-radius: 3em;
+  margin-left: 6px;
+  display: flex;
+}
+
+.evaluation-info{
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+}
+
+
+.thank-you-header{
+  margin-top: 1.3em;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 0em;
+  
+  font-size: 30px;
+}
+
+
+.rating-header {
   margin-top: 1.3em;
   font-weight: 700;
   color: hsl(0, 0%, 100%);
@@ -53,30 +106,33 @@ body{
   margin-top: 0.85em;
   font-weight: 400;
   color: hsl(217, 12%, 63%);
-  margin-bottom: 0em;
+  margin-bottom: 2em;
+  line-height: 1.5;
 }
 
 .evaluation{
   display: flex;
-  margin-top: 0.85em;
+  margin-top: 0em;
   font-weight: 400;
   color: hsl(217, 12%, 63%);
-  margin: 0 -8.5px;
+  margin: 0 -1em;
+  padding: 0 -1em;
+  
 }
 
 .evaluation-con{
   
-  margin: 0 8.5px;
+  margin: 0 1em;
   background-color: hsl(218, 9%, 23%);
-  padding: 0.7em;
+  
   border-radius: 50%;
   border: none;
-  width: 3.4em;
-  height: 3.4em;
+  width: 4em;
+  height: 4em;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 1.3em;
+  margin-top: 0em;
   font-weight: 400;
   color: hsl(217, 12%, 63%);
 
@@ -123,4 +179,18 @@ body{
   cursor: pointer;
 }
 
+.thank-description{
+  text-align: center;
+  line-height: 1.5;
+}
+.paragraph1 {
+  margin-top: 0;
+  margin-bottom: 0em;
+
+}
+.paragraph2{
+  margin-top: 0em;
+  padding: 0em 1em;
+  margin-bottom: 0em;
+}
 
